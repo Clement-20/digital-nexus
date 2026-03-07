@@ -566,6 +566,5 @@ export const courses: Course[] = [
       { id: 100, question: "The final result of the Profit and Loss Account is:", options: ["Gross Profit", "Net Profit or Loss", "Total Equity", "Total Cash"], correctAnswer: 1 }
     ]
   }
-  
-  
+];  
                                                                          
