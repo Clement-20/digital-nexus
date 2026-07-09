@@ -567,11 +567,12 @@ export const courses: Course[] = [
     ]
   }
 ], 
+[
+ {
      code: "AMS 102",
     title: "Basic Mathematics",
     description: "Surds, Indices, Polynomial, Differentiation & Integration,Number System, Permutation and Combination, Differentiation of Trigonometry and many more.",
-    questions:
-[
+  questions: [
 { id: 1, question: "What is the sum of the first n natural numbers?", options: ["n(n+1)/2", "n(n-1)/2", "n²", "2n"], correctAnswer: 0 },
 { id: 2, question: "What is the common ratio in a geometric sequence?", options: ["Difference between terms", "Sum of terms", "Ratio of consecutive terms", "Product of terms"], correctAnswer: 2 },
 { id: 3, question: "What is the discriminant of a quadratic equation?", options: ["b² - 4ac", "a² + b²", "2ab", "b² + 4ac"], correctAnswer: 0 },
@@ -670,4 +671,5 @@ export const courses: Course[] = [
 { "id": 59, "question": "What is √(a²)?", "options": ["|a|", "a²", "2a", "√a"], "correctAnswer": 0 },
 
 { "id": 60, "question": "Simplify (2³ × 2⁻¹)", "options": ["2²", "2³", "2⁴", "2¹"], "correctAnswer": 0 }
+}
 ];                                                                 
