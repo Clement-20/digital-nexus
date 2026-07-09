@@ -631,5 +631,6 @@ questions: [
 { "id": 58, "question": "Derivative of tan(x)", "options": ["sec²(x)", "cos(x)", "sin(x)", "-sec²(x)"], "correctAnswer": 0 },
 { "id": 59, "question": "What is √(a²)?", "options": ["|a|", "a²", "2a", "√a"], "correctAnswer": 0 },
 { "id": 60, "question": "Simplify (2³ × 2⁻¹)", "options": ["2²", "2³", "2⁴", "2¹"], "correctAnswer": 0 }
-},
-]                                                            
+    ]
+   },
+];                                                      
