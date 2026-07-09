@@ -5,8 +5,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'CBT—OAU | Computer Based Test',
-  description: 'High-performance Computer Based Test platform for OAU students. Take practice exams for GST 111, BUS 101, SOC 101, and AMS 103.',
-  generator: 'v0.app',
+  description: 'High-performance Computer Based Test platform for OAU students. Take practice exams for GST 112, BUS 102, ACC 102, ECN 102, and AMS 102.',
+  generator: 'icepab',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
