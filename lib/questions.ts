@@ -595,7 +595,7 @@ questions: [
 { id: 22, question: "What is median?", options: ["Middle value", "Average", "Sum", "Difference"], correctAnswer: 0 },
 { id: 23, question: "What is mode?", options: ["Most frequent", "Least frequent", "Middle", "Average"], correctAnswer: 0 },
 { id: 24, question: "What is variance?", options: ["Spread measure", "Central value", "Middle value", "Frequency"], correctAnswer: 0 },
-{ id: 25, question: "What is standard deviation?", options: ["Square root of variance", "Variance", "Mean", "Median"], correctAnswer: 0 }
+{ id: 25, question: "What is standard deviation?", options: ["Square root of variance", "Variance", "Mean", "Median"], correctAnswer: 0 },
 { "id": 26, "question": "Evaluate 2³ × 2²", "options": ["2⁵", "2⁶", "4⁵", "8²"], "correctAnswer": 0 },
 { "id": 27, "question": "Simplify (3²)³", "options": ["3⁵", "3⁶", "9³", "27²"], "correctAnswer": 1 },
 { "id": 28, "question": "What is √50 in simplest surd form?", "options": ["5√2", "2√5", "25√2", "10√5"], "correctAnswer": 0 },
