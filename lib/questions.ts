@@ -600,26 +600,15 @@ export const courses: Course[] = [
 { id: 23, question: "What is mode?", options: ["Most frequent", "Least frequent", "Middle", "Average"], correctAnswer: 0 },
 { id: 24, question: "What is variance?", options: ["Spread measure", "Central value", "Middle value", "Frequency"], correctAnswer: 0 },
 { id: 25, question: "What is standard deviation?", options: ["Square root of variance", "Variance", "Mean", "Median"], correctAnswer: 0 }
-]
-[
 { "id": 26, "question": "Evaluate 2³ × 2²", "options": ["2⁵", "2⁶", "4⁵", "8²"], "correctAnswer": 0 },
-
 { "id": 27, "question": "Simplify (3²)³", "options": ["3⁵", "3⁶", "9³", "27²"], "correctAnswer": 1 },
-
 { "id": 28, "question": "What is √50 in simplest surd form?", "options": ["5√2", "2√5", "25√2", "10√5"], "correctAnswer": 0 },
-
 { "id": 29, "question": "Rationalize 1/√2", "options": ["√2/2", "1/2√2", "√2", "2√2"], "correctAnswer": 0 },
-
 { "id": 30, "question": "What is the value of 4⁰?", "options": ["0", "1", "4", "Undefined"], "correctAnswer": 1 },
-
 { "id": 31, "question": "How many ways can 3 books be arranged?", "options": ["3", "6", "9", "27"], "correctAnswer": 1 },
-
 { "id": 32, "question": "Evaluate 5!", "options": ["120", "60", "20", "24"], "correctAnswer": 0 },
-
 { "id": 33, "question": "How many permutations of 4 objects taken 2 at a time?", "options": ["12", "8", "6", "16"], "correctAnswer": 0 },
-
 { "id": 34, "question": "How many combinations of 4 objects taken 2 at a time?", "options": ["6", "12", "8", "4"], "correctAnswer": 0 },
-
 { "id": 35, "question": "If a matric number has 6 distinct digits, how many permutations are possible?", "options": ["720", "120", "360", "600"], "correctAnswer": 0 },
 
 { "id": 36, "question": "Simplify √18 + √8", "options": ["5√2", "3√2", "4√2", "6√2"], "correctAnswer": 0 },
