@@ -133,3 +133,10 @@ export default function CoursePage() {
     />
   );
 }
+
+// Generate static paths for all courses - REQUIRED for dynamic routes
+export async function generateStaticParams() {
+  return courses.map((course) => ({
+    courseCode: course.code.toLowerCase(),
+  }));
+}
