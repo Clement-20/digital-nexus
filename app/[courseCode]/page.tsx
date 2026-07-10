@@ -4,36 +4,31 @@ import { ExamInterface } from '@/components/cbt/exam-interface';
 import { ResultsPage } from '@/components/cbt/results-page';
 import { useState, useCallback } from 'react';
 import { Question, courses } from '@/lib/questions';
-import { notFound } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
-interface PageProps {
-  params: Promise<{
-    courseCode: string;
-  }>;
-}
-
-export default async function CoursePage({ params }: PageProps) {
-  const { courseCode } = await params;
-
-  // Validate course exists
-  const course = courses.find(
-    (c) => c.code.toLowerCase() === courseCode.toLowerCase()
-  );
-
-  if (!course) {
-    notFound();
-  }
-
-  return <CoursePageClient courseCode={courseCode} />;
-}
-
-function CoursePageClient({ courseCode }: { courseCode: string }) {
+export default function CoursePage() {
+  const params = useParams();
+  const router = useRouter();
+  const courseCode = params?.courseCode as string;
+  const [isValid, setIsValid] = useState(true);
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState<{
     answers: Record<number, number>;
     questions: Question[];
     courseCode: string;
   } | null>(null);
+
+  // Validate course exists
+  useEffect(() => {
+    const course = courses.find(
+      (c) => c.code.toLowerCase() === courseCode?.toLowerCase()
+    );
+    if (!course) {
+      setIsValid(false);
+      router.push('/not-found');
+    }
+  }, [courseCode, router]);
 
   const handleComplete = useCallback(
     (
@@ -53,14 +48,24 @@ function CoursePageClient({ courseCode }: { courseCode: string }) {
         'Are you sure you want to exit? Your progress will not be saved.'
       )
     ) {
-      window.location.href = '/';
+      router.push('/');
     }
-  }, []);
+  }, [router]);
 
   const handleRetakeExam = useCallback(() => {
     setShowResults(false);
     setResults(null);
   }, []);
+
+  if (!isValid || !courseCode) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="animate-pulse text-muted-foreground">
+          Validating course...
+        </div>
+      </div>
+    );
+  }
 
   if (showResults && results) {
     return (
@@ -81,13 +86,3 @@ function CoursePageClient({ courseCode }: { courseCode: string }) {
     />
   );
 }
-
-// Generate static paths for all courses
-export async function generateStaticParams() {
-  return courses.map((course) => ({
-    courseCode: course.code.toLowerCase(),
-  }));
-}
-
-// Set revalidation for ISR (Incremental Static Regeneration)
-export const revalidate = 3600; // Revalidate every hour
