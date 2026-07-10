@@ -204,36 +204,102 @@ export const courses: Course[] = [
     title: "Basic Mathematics",
     description: "Surds, Indices, Polynomial, Differentiation & Integration, Number System, Permutation and Combination, Differentiation of Trigonometry and many more.",
     questions: [
-      { id: 1, question: "What is the sum of the first n natural numbers?", options: ["n(n+1)/2", "n(n-1)/2", "n²", "2n"], correctAnswer: 0 },
-      { id: 2, question: "What is the common ratio in a geometric sequence?", options: ["Difference between terms", "Sum of terms", "Ratio of consecutive terms", "Product of terms"], correctAnswer: 2 },
-      { id: 3, question: "What is the discriminant of a quadratic equation?", options: ["b² - 4ac", "a² + b²", "2ab", "b² + 4ac"], correctAnswer: 0 },
-      { id: 4, question: "What does a zero discriminant indicate?", options: ["Two real roots", "One real root", "No real root", "Infinite roots"], correctAnswer: 1 },
-      { id: 5, question: "What is the formula for the nth term of an arithmetic sequence?", options: ["a + (n-1)d", "a(n-1)d", "a + nd", "a(n+d)"], correctAnswer: 0 },
-      { id: 6, question: "What is the sum of a geometric series formula?", options: ["a(1-rⁿ)/(1-r)", "a(n+r)", "a+rⁿ", "n(a+r)"], correctAnswer: 0 },
-      { id: 7, question: "What is a root of a polynomial?", options: ["Value making polynomial zero", "Value making polynomial infinite", "Coefficient", "Degree"], correctAnswer: 0 },
-      { id: 8, question: "What is the degree of a polynomial?", options: ["Highest power", "Lowest power", "Coefficient", "Constant"], correctAnswer: 0 },
-      { id: 9, question: "What is a quadratic equation?", options: ["Degree 1", "Degree 2", "Degree 3", "Degree 4"], correctAnswer: 1 },
-      { id: 10, question: "What is the vertex form of a quadratic?", options: ["a(x-h)² + k", "ax²+bx+c", "a(x+h)²-k", "x²+h+k"], correctAnswer: 0 },
-      { id: 11, question: "Evaluate 2³ × 2²", options: ["2⁵", "2⁶", "4⁵", "8²"], correctAnswer: 0 },
-      { id: 12, question: "Simplify (3²)³", options: ["3⁵", "3⁶", "9³", "27²"], correctAnswer: 1 },
-      { id: 13, question: "What is √50 in simplest surd form?", options: ["5√2", "2√5", "25√2", "10√5"], correctAnswer: 0 },
-      { id: 14, question: "Rationalize 1/√2", options: ["√2/2", "1/2√2", "√2", "2√2"], correctAnswer: 0 },
-      { id: 15, question: "What is the value of 4⁰?", options: ["0", "1", "4", "Undefined"], correctAnswer: 1 },
-      { id: 16, question: "How many ways can 3 books be arranged?", options: ["3", "6", "9", "27"], correctAnswer: 1 },
-      { id: 17, question: "Evaluate 5!", options: ["120", "60", "20", "24"], correctAnswer: 0 },
-      { id: 18, question: "How many permutations of 4 objects taken 2 at a time?", options: ["12", "8", "6", "16"], correctAnswer: 0 },
-      { id: 19, question: "How many combinations of 4 objects taken 2 at a time?", options: ["6", "12", "8", "4"], correctAnswer: 0 },
-      { id: 20, question: "Simplify √18 + √8", options: ["5√2", "3√2", "4√2", "6√2"], correctAnswer: 0 },
-      { id: 21, question: "What is 10 in binary?", options: ["1010", "1001", "1110", "1100"], correctAnswer: 0 },
-      { id: 22, question: "Which set includes negative numbers?", options: ["Natural numbers", "Whole numbers", "Integers", "Counting numbers"], correctAnswer: 2 },
-      { id: 23, question: "What is the derivative of x²?", options: ["2x", "x", "x²", "2"], correctAnswer: 0 },
-      { id: 24, question: "Differentiate 3x³", options: ["9x²", "3x²", "6x", "x³"], correctAnswer: 0 },
-      { id: 25, question: "What is ∫x dx?", options: ["x²/2 + C", "x + C", "2x + C", "x² + C"], correctAnswer: 0 },
-      { id: 26, question: "Evaluate ∫2x dx", options: ["x² + C", "2x² + C", "x + C", "2 + C"], correctAnswer: 0 },
-      { id: 27, question: "What is derivative of sin(x)?", options: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correctAnswer: 0 },
-      { id: 28, question: "What is derivative of cos(x)?", options: ["-sin(x)", "sin(x)", "cos(x)", "-cos(x)"], correctAnswer: 0 },
-      { id: 29, question: "Expand (x + 2)(x + 3)", options: ["x² + 5x + 6", "x² + 6x + 5", "x² + 3x + 2", "x² + 2x + 3"], correctAnswer: 0 },
-      { id: 30, question: "Factorize x² - 9", options: ["(x-3)(x+3)", "(x-9)(x+1)", "(x-1)(x+9)", "(x-3)²"], correctAnswer: 0 },
-    ],
-  },
+{ id: 1, question: "What is the sum of the first n natural numbers?", options: ["n(n+1)/2", "n(n-1)/2", "n²", "2n"], correctAnswer: 0 },
+{ id: 2, question: "What is the common ratio in a geometric sequence?", options: ["Difference between terms", "Sum of terms", "Ratio of consecutive terms", "Product of terms"], correctAnswer: 2 },
+{ id: 3, question: "What is the discriminant of a quadratic equation?", options: ["b² - 4ac", "a² + b²", "2ab", "b² + 4ac"], correctAnswer: 0 },
+{ id: 4, question: "What does a zero discriminant indicate?", options: ["Two real roots", "One real root", "No real root", "Infinite roots"], correctAnswer: 1 },
+{ id: 5, question: "What is the formula for the nth term of an arithmetic sequence?", options: ["a + (n-1)d", "a(n-1)d", "a + nd", "a(n+d)"], correctAnswer: 0 },
+{ id: 6, question: "What is the sum of a geometric series formula?", options: ["a(1-rⁿ)/(1-r)", "a(n+r)", "a+rⁿ", "n(a+r)"], correctAnswer: 0 },
+{ id: 7, question: "What is a root of a polynomial?", options: ["Value making polynomial zero", "Value making polynomial infinite", "Coefficient", "Degree"], correctAnswer: 0 },
+{ id: 8, question: "What is the degree of a polynomial?", options: ["Highest power", "Lowest power", "Coefficient", "Constant"], correctAnswer: 0 },
+{ id: 9, question: "What is a quadratic equation?", options: ["Degree 1", "Degree 2", "Degree 3", "Degree 4"], correctAnswer: 1 },
+{ id: 10, question: "What is the vertex form of a quadratic?", options: ["a(x-h)² + k", "ax²+bx+c", "a(x+h)²-k", "x²+h+k"], correctAnswer: 0 },
+
+{ id: 11, question: "What is factorial of n?", options: ["n!", "n²", "n+n", "n-1"], correctAnswer: 0 },
+{ id: 12, question: "What is permutation?", options: ["Arrangement", "Selection", "Addition", "Division"], correctAnswer: 0 },
+{ id: 13, question: "What is combination?", options: ["Selection", "Arrangement", "Multiplication", "Division"], correctAnswer: 0 },
+{ id: 14, question: "What is probability range?", options: ["0 to 1", "-1 to 1", "0 to 10", "1 to 100"], correctAnswer: 0 },
+{ id: 15, question: "What is P(A∩B)?", options: ["Intersection", "Union", "Difference", "Complement"], correctAnswer: 0 },
+{ id: 16, question: "What is P(A∪B)?", options: ["Union", "Intersection", "Difference", "Product"], correctAnswer: 0 },
+{ id: 17, question: "What is independent event?", options: ["No effect on each other", "Dependent", "Same outcome", "Impossible"], correctAnswer: 0 },
+{ id: 18, question: "What is dependent event?", options: ["Events affect each other", "Independent", "Equal probability", "Impossible"], correctAnswer: 0 },
+{ id: 19, question: "What is sample space?", options: ["All outcomes", "One outcome", "Event", "Trial"], correctAnswer: 0 },
+{ id: 20, question: "What is an event?", options: ["Subset of sample space", "Whole space", "Number", "Equation"], correctAnswer: 0 },
+
+{ id: 21, question: "What is mean?", options: ["Average", "Median", "Mode", "Range"], correctAnswer: 0 },
+{ id: 22, question: "What is median?", options: ["Middle value", "Average", "Sum", "Difference"], correctAnswer: 0 },
+{ id: 23, question: "What is mode?", options: ["Most frequent", "Least frequent", "Middle", "Average"], correctAnswer: 0 },
+{ id: 24, question: "What is variance?", options: ["Spread measure", "Central value", "Middle value", "Frequency"], correctAnswer: 0 },
+{ id: 25, question: "What is standard deviation?", options: ["Square root of variance", "Variance", "Mean", "Median"], correctAnswer: 0 },
+{ "id": 26, "question": "Evaluate 2³ × 2²", "options": ["2⁵", "2⁶", "4⁵", "8²"], "correctAnswer": 0 },
+
+{ "id": 27, "question": "Simplify (3²)³", "options": ["3⁵", "3⁶", "9³", "27²"], "correctAnswer": 1 },
+
+{ "id": 28, "question": "What is √50 in simplest surd form?", "options": ["5√2", "2√5", "25√2", "10√5"], "correctAnswer": 0 },
+
+{ "id": 29, "question": "Rationalize 1/√2", "options": ["√2/2", "1/2√2", "√2", "2√2"], "correctAnswer": 0 },
+
+{ "id": 30, "question": "What is the value of 4⁰?", "options": ["0", "1", "4", "Undefined"], "correctAnswer": 1 },
+
+{ "id": 31, "question": "How many ways can 3 books be arranged?", "options": ["3", "6", "9", "27"], "correctAnswer": 1 },
+
+{ "id": 32, "question": "Evaluate 5!", "options": ["120", "60", "20", "24"], "correctAnswer": 0 },
+
+{ "id": 33, "question": "How many permutations of 4 objects taken 2 at a time?", "options": ["12", "8", "6", "16"], "correctAnswer": 0 },
+
+{ "id": 34, "question": "How many combinations of 4 objects taken 2 at a time?", "options": ["6", "12", "8", "4"], "correctAnswer": 0 },
+
+{ "id": 35, "question": "If a matric number has 6 distinct digits, how many permutations are possible?", "options": ["720", "120", "360", "600"], "correctAnswer": 0 },
+
+{ "id": 36, "question": "Simplify √18 + √8", "options": ["5√2", "3√2", "4√2", "6√2"], "correctAnswer": 0 },
+
+{ "id": 37, "question": "What is 10 in binary?", "options": ["1010", "1001", "1110", "1100"], "correctAnswer": 0 },
+
+{ "id": 38, "question": "Which set includes negative numbers?", "options": ["Natural numbers", "Whole numbers", "Integers", "Counting numbers"], "correctAnswer": 2 },
+
+{ "id": 39, "question": "What is the derivative of x²?", "options": ["2x", "x", "x²", "2"], "correctAnswer": 0 },
+
+{ "id": 40, "question": "Differentiate 3x³", "options": ["9x²", "3x²", "6x", "x³"], "correctAnswer": 0 },
+
+{ "id": 41, "question": "What is ∫x dx?", "options": ["x²/2 + C", "x + C", "2x + C", "x² + C"], "correctAnswer": 0 },
+
+{ "id": 42, "question": "Evaluate ∫2x dx", "options": ["x² + C", "2x² + C", "x + C", "2 + C"], "correctAnswer": 0 },
+
+{ "id": 43, "question": "What is derivative of sin(x)?", "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], "correctAnswer": 0 },
+
+{ "id": 44, "question": "What is derivative of cos(x)?", "options": ["-sin(x)", "sin(x)", "cos(x)", "-cos(x)"], "correctAnswer": 0 },
+
+{ "id": 45, "question": "Expand (x + 2)(x + 3)", "options": ["x² + 5x + 6", "x² + 6x + 5", "x² + 3x + 2", "x² + 2x + 3"], "correctAnswer": 0 },
+
+{ "id": 46, "question": "Factorize x² - 9", "options": ["(x-3)(x+3)", "(x-9)(x+1)", "(x-1)(x+9)", "(x-3)²"], "correctAnswer": 0 },
+
+{ "id": 47, "question": "What is a rational number?", "options": ["p/q form", "Integer only", "Decimal only", "Whole number"], "correctAnswer": 0 },
+
+{ "id": 48, "question": "Simplify 2⁻²", "options": ["1/4", "4", "1/2", "2"], "correctAnswer": 0 },
+
+{ "id": 49, "question": "Evaluate (√3)²", "options": ["3", "6", "9", "√3"], "correctAnswer": 0 },
+
+{ "id": 50, "question": "How many ways can 5 students sit in a row?", "options": ["120", "60", "20", "25"], "correctAnswer": 0 },
+
+{ "id": 51, "question": "Evaluate 6C2", "options": ["15", "12", "30", "20"], "correctAnswer": 0 },
+
+{ "id": 52, "question": "Evaluate 6P2", "options": ["30", "12", "15", "20"], "correctAnswer": 0 },
+
+{ "id": 53, "question": "If digits repeat in a matric number, arrangements reduce due to:", "options": ["Repetition", "Division", "Addition", "Power"], "correctAnswer": 0 },
+
+{ "id": 54, "question": "Simplify √72", "options": ["6√2", "8√2", "4√3", "9√2"], "correctAnswer": 0 },
+
+{ "id": 55, "question": "What is the base of logarithm in log₁₀?", "options": ["10", "1", "0", "e"], "correctAnswer": 0 },
+
+{ "id": 56, "question": "Differentiate x⁴", "options": ["4x³", "x³", "3x⁴", "4x"], "correctAnswer": 0 },
+
+{ "id": 57, "question": "Integrate 3x² dx", "options": ["x³ + C", "3x³ + C", "x² + C", "6x + C"], "correctAnswer": 0 },
+
+{ "id": 58, "question": "Derivative of tan(x)", "options": ["sec²(x)", "cos(x)", "sin(x)", "-sec²(x)"], "correctAnswer": 0 },
+
+{ "id": 59, "question": "What is √(a²)?", "options": ["|a|", "a²", "2a", "√a"], "correctAnswer": 0 },
+
+{ "id": 60, "question": "Simplify (2³ × 2⁻¹)", "options": ["2²", "2³", "2⁴", "2¹"], "correctAnswer": 0 }
+]
+},
 ];
