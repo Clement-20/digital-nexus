@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import { ExamInterface } from '@/components/cbt/exam-interface';
-import { ResultsPage } from '@/components/cbt/results-page';
+import { ResultsView } from '@/components/cbt/results-view';
 import { useState, useCallback, useEffect } from 'react';
 import { Question, courses } from '@/lib/questions';
 import Link from 'next/link';
@@ -60,6 +60,10 @@ export default function CoursePage() {
     setResults(null);
   }, []);
 
+  const handleHome = useCallback(() => {
+    window.location.href = '/';
+  }, []);
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
@@ -111,11 +115,12 @@ export default function CoursePage() {
 
   if (showResults && results) {
     return (
-      <ResultsPage
+      <ResultsView
         answers={results.answers}
         questions={results.questions}
         courseCode={results.courseCode}
         onRetake={handleRetakeExam}
+        onHome={handleHome}
       />
     );
   }
